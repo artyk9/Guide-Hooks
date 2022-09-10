@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const SimpleComponent = ({ onLogin, onLogOut, isAuth }) => {
     return (
         <>
-            {isAuth === "token" ? (
+            {isAuth ? (
                 <button className="btn btn-primary " onClick={onLogOut}>
                     Выйти из системы
                 </button>
